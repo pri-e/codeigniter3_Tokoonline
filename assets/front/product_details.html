@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Pasar Sapi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+	
+<!-- Bootstrap style --> 
+    <link id="callCss" rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen"/>
+    <link href="assets/css/style.css" rel="stylesheet" media="screen"/>
+<!-- Bootstrap style responsive -->	
+	<link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet"/>
+	<link href="assets/css/font-awesome.css" rel="stylesheet" type="text/css">
+<!-- Google-code-prettify -->	
+	<link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet"/>
+<!-- fav and touch icons -->
+    <link rel="shortcut icon" href="assets/gambar/icon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="themes/images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="themes/images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="themes/images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="themes/images/ico/apple-touch-icon-57-precomposed.png">
+	<style type="text/css" id="enject"></style>
+  </head>
+<body>
+<div id="header">
+<div class="container">
+<div id="welcomeLine" class="row">
+	<div class="span6">Selamat Datang!<strong> Pengguna</strong></div>
+	<div class="span6">
+	<div class="pull-right">
+		<span class="btn btn-mini">Id</span>
+		<a href="product_summary.html"><span>Rp</span></a>
+		<span class="btn btn-mini">Rp 1,3.jt</span>
+		<a href="product_summary.html"><span class="">Rp</span></a>
+		<a href="product_summary.html"><span class="btn btn-mini btn-primary"><i class="icon-shopping-cart icon-white"></i> [ 3 ] Barang Dalam Keranjang Belanja </span> </a> 
+	</div>
+	</div>
+</div>
+<!-- Navbar ================================================== -->
+<div id="logoArea" class="navbar">
+<a id="smallScreen" data-target="#topMenu" data-toggle="collapse" class="btn btn-navbar">
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+</a>
+  <div class="navbar-inner">
+    <a class="brand" href="index.html"><img src="assets/gambar/logo/logosapi.png" alt="Pasar Sapi"/></a>
+		<form class="form-inline navbar-search" method="post" action="products.html" >
+		<input id="srchFld" class="srchTxt" type="text" />
+		  <select class="srchTxt">
+			<option>SEMUA</option>
+			<option>TERNAK </option>
+			<option>PELIHARAAN </option>
+			<option>ALAT PETERNAKAN </option>
+			<option>OBAT OBATAN </option>
+		</select> 
+		  <button type="submit" id="submitButton" class="btn btn-primary">Cari</button>
+    </form>
+    <ul id="topMenu" class="nav pull-right">
+	 <li class=""><a href="special_offer.html">Tawaran Khusus</a></li>
+	 <li class=""><a href="contact.html">Hubungi Kami</a></li>
+	 <li class="">
+	 <a href="#login" role="button" data-toggle="modal" style="padding-right:0"><span class="btn btn-md btn-primary">Login</span></a>
+	<div id="login" class="modal hide fade in" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="false" >
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h3>Login Pengguna</h3>
+		  </div>
+		  <div class="modal-body">
+			<form class="form-horizontal loginFrm">
+			  <div class="control-group">								
+				<input type="text" id="inputEmail" placeholder="Email">
+			  </div>
+			  <div class="control-group">
+				<input type="password" id="inputPassword" placeholder="Password">
+			  </div>
+			  <div class="control-group">
+				<label class="checkbox">
+				<input type="checkbox"> Ingatkan saya
+				</label>
+			  </div>
+			</form>		
+			<button type="submit" class="btn btn-primary">Sign in</button>
+			<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+		  </div>
+	</div>
+	</li>
+    </ul>
+  </div>
+</div>
+</div>
+</div>
+<!-- Header End====================================================================== -->
+<div id="mainBody">
+	<div class="container">
+	<div class="row">
+<!-- Sidebar ================================================== -->
+	<div id="sidebar" class="span3">
+		<div class="well well-small"><a id="myCart" href="product_summary.html"><img src="assets/gambar/ico-cart.png" alt="cart">3 Items di keranjang<span class="badge badge-warning pull-right">Rp 1,3.jt</span></a></div>
+		<ul id="sideManu" class="nav nav-tabs nav-stacked">
+			<li class="subMenu open"><a> TERNAK [230]</a>
+				<ul>
+				<li><a class="active" href="products.html"><i class="icon-chevron-right"></i>Sapi (100) </a></li>
+				<li><a href="products.html"><i class="icon-chevron-right"></i>Kerbau (37)</a></li>
+				<li><a href="products.html"><i class="icon-chevron-right"></i>Kambing (30)</a></li>
+				<li><a href="products.html"><i class="icon-chevron-right"></i>Kelinci (80)</a></li>
+				<li><a href="products.html"><i class="icon-chevron-right"></i>Babi (15)</a></li>
+				<li><a href="products.html"><i class="icon-chevron-right"></i>Ayam (115)</a></li>
+				</ul>
+			</li>
+			<li class="subMenu"><a> ALAT PETERNAKAN [840] </a>
+			<ul style="display:none">
+				<li><a href="products.html"><i class="icon-chevron-right"></i>Mesin Tetas (45)</a></li>
+				<li><a href="products.html"><i class="icon-chevron-right"></i>Pencacah Rumput (8)</a></li>												
+				<li><a href="products.html"><i class="icon-chevron-right"></i>Mesin Pelets (5)</a></li>	
+				<li><a href="products.html"><i class="icon-chevron-right"></i>Mesin Pengolah Pakan (5)</a></li>
+				<li><a href="products.html"><i class="icon-chevron-right"></i>Timbangan Ternak (6)</a></li>	
+				<li><a href="products.html"><i class="icon-chevron-right"></i>Kandang Ternak (6)</a></li>												
+			</ul>
+			</li>
+			<li class="subMenu"><a>PAKAN TERNAK [1000]</a>
+				<ul style="display:none">
+					<li><a href="products.html"><i class="icon-chevron-right"></i>Pakan Ternak  (35)</a></li>
+					<li><a href="products.html"><i class="icon-chevron-right"></i>Pakan Unggas (8)</a></li>												
+					<li><a href="products.html"><i class="icon-chevron-right"></i>Pakan Peliharaan (5)</a></li>	
+				</ul>
+			</li>
+			<li class="subMenu"><a href="products.html">OBAT OBATAN [18]</a>
+				<ul style="display:none">
+					<li><a href="products.html"><i class="icon-chevron-right"></i>Viatmin  (35)</a></li>
+					<li><a href="products.html"><i class="icon-chevron-right"></i>Antibiotik  (35)</a></li>
+					<li><a href="products.html"><i class="icon-chevron-right"></i>Antiseptik  (35)</a></li>
+				</ul>
+			</li>
+
+			<li><a href="products.html">BINATANG PELIHARAAN [58]</a></li>
+			<li><a href="products.html">BELUM ADA JUDUL [14]</a></li>
+		</ul>
+		<br/>
+		  
+	</div>
+<!-- Sidebar end=============================================== -->
+	<div class="span9">
+    <ul class="breadcrumb">
+    <li><a href="index.html">Home</a> <span class="divider">/</span></li>
+    <li><a href="products.html">Products</a> <span class="divider">/</span></li>
+    <li class="active">product Details</li>
+    </ul>	
+	<div class="row">	  
+			<div id="gallery" class="span3">
+            <a href="assets/gambar/produk/kebo_toraya.jpg" title="Kerbau Toraya">
+				<img src="assets/gambar/produk/kebo_toraya.jpg" style="width:100%" alt="Kerbau Toraya"/>
+            </a>
+			<div id="differentview" class="moreOptopm carousel slide">
+                <div class="carousel-inner">
+                  <div class="item active">
+                   <a href="assets/gambar/produk/kebo_toraya1.jpg"> <img style="width:29%" src="assets/gambar/produk/kebo_toraya1.jpg" alt=""/></a>
+                   <a href="assets/gambar/produk/kebo_toraya.jpg"> <img style="width:29%" src="assets/gambar/produk/kebo_toraya.jpg" alt=""/></a>
+                   <a href="assets/gambar/produk/kebo_toraya1.jpg" > <img style="width:29%" src="assets/gambar/produk/kebo_toraya1.jpg" alt=""/></a>
+                  </div>
+                  <div class="item">
+                   <a href="assets/gambar/produk/kebo_toraya.jpg" > <img style="width:29%" src="assets/gambar/produk/kebo_toraya.jpg" alt=""/></a>
+                   <a href="assets/gambar/produk/kebo_toraya1.jpg"> <img style="width:29%" src="assets/gambar/produk/kebo_toraya1.jpg" alt=""/></a>
+                   <a href="assets/gambar/produk/kebo_toraya.jpg"> <img style="width:29%" src="assets/gambar/produk/kebo_toraya.jpg" alt=""/></a>
+                  </div>
+                </div>
+              <!--  
+			  <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a> 
+			  -->
+              </div>
+			  
+			 <div class="btn-toolbar">
+			  <div class="btn-group">
+				<span class="btn"><i class="icon-envelope"></i></span>
+				<span class="btn" ><i class="icon-print"></i></span>
+				<span class="btn" ><i class="icon-zoom-in"></i></span>
+				<span class="btn" ><i class="icon-star"></i></span>
+				<span class="btn" ><i class=" icon-thumbs-up"></i></span>
+				<span class="btn" ><i class="icon-thumbs-down"></i></span>
+			  </div>
+			</div>
+			</div>
+			<div class="span6">
+				<h3>Kerbau Toraya  </h3>
+				<small>-Kerbau Toraya Sulawesi Selatan.</small>
+				<hr class="soft"/>
+				<form class="form-horizontal qtyFrm">
+				  <div class="control-group">
+					<label class="control-label"><span>Rp900.jt</span></label>
+					<div class="controls">
+					<input type="number" class="span1" placeholder="Qty."/>
+					  <button type="submit" class="btn btn-large btn-primary pull-right"> Masukkan ke <i class=" icon-shopping-cart"></i></button>
+					</div>
+				  </div>
+				</form>
+				
+				<hr class="soft"/>
+				<h4>2 dalam stock</h4>
+				<form class="form-horizontal qtyFrm pull-right">
+				  <div class="control-group">
+					<label class="control-label"><span>Warna</span></label>
+					<div class="controls">
+					  <select class="span2">
+						  <option>Hitam</option>
+						  <option>Putih</option>
+						  <option>Belang</option>
+						  <option>Belang</option>
+						</select>
+					</div>
+				  </div>
+				</form>
+				<hr class="soft clr"/>
+				<p class="justify">
+				Kerbau Toraya merupakan salah satu rumpun kerbau asli Indonesia yang mempunyai sebaran asli geografis di Provinsi Sulawesi Selatan, dan telah dibudidayakan secara turun-temurun, serta memiliki nilai budaya yang tinggi.  Kerbau Toraya sebagai salah satu rumpun kerbau asli, kekayaan sumber daya genetik ternak asli Indonesia, dan memiliki nilai budaya tinggi, harus dilindungi dan dilestarikan mempunyai keseragaman bentuk fisik dan komposisi genetik, serta kemampuan adaptasi dengan baik pada keterbatasan lingkungan.
+				
+				</p>
+				<a class="btn btn-small pull-right" href="#detail">More Details</a>
+				<br class="clr"/>
+			<a href="#" name="detail"></a>
+			<hr class="soft"/>
+			</div>
+			
+			<div class="span9">
+            <ul id="productDetail" class="nav nav-tabs">
+              <li class="active"><a href="#home" data-toggle="tab">Produk Detail</a></li>
+              <li><a href="#profile" data-toggle="tab">Produk Terkait</a></li>
+            </ul>
+            <div id="myTabContent" class="tab-content">
+              <div class="tab-pane fade active in" id="home">
+			  <h4>Product Information</h4>
+                <table class="table table-bordered">
+				<tbody>
+				<tr class="techSpecRow"><th colspan="2">Detail</th></tr>
+				<tr class="techSpecRow"><td class="techSpecTD1">Kategori: </td><td class="techSpecTD2">Kerbau</td></tr>
+				<tr class="techSpecRow"><td class="techSpecTD1">Jenis:</td><td class="techSpecTD2">Kerbau Toraya</td></tr>
+				<tr class="techSpecRow"><td class="techSpecTD1">Kelamin:</td><td class="techSpecTD2">Jantan</td></tr>
+				<tr class="techSpecRow"><td class="techSpecTD1">Umur:</td><td class="techSpecTD2"> 3 Tahun</td></tr>
+				<tr class="techSpecRow"><td class="techSpecTD1">Ukuran:</td><td class="techSpecTD2">tinggi pundak: 127 cm <br>  panjang badan: 140,1cm. <br>lingkar dada : 200,4 cm.</td></tr>
+				<tr class="techSpecRow"><td class="techSpecTD1">Bobot:</td><td class="techSpecTD2">685 kg</td></tr>
+				</tbody>
+				</table>
+				
+				<h5>Features</h5>
+				<p>
+				-
+				</p>
+
+				<h4>Reviews</h4>
+				
+				<p class="justify">Kerbau Belang Toraya merupakan salah satu rumpun kerbau asli Indonesia yang mempunyai sebaran asli geografis di Provinsi Sulawesi Selatan. Kerbau yang secara turun temurun telah dibudidayakan oleh masyarakat di Tana Toraja ini juga memiliki nilai budaya yang tinggi.  Selain itu, kerbau tersebut juga mempunyai keseragaman bentuk fisik dan komposisi genetik, serta memiliki kemampuan adaptasi yang baik terhadap lingkungan. Sebagai salah satu kekayaan sumber daya genetik ternak asli Indonesia, maka Kerbau Toraya sudah sepantasnya harus dilindungi dan dilestarikan</p>
+              </div>
+		<div class="tab-pane fade" id="profile">
+		<div id="myTab" class="pull-right">
+		 <a href="#listView" data-toggle="tab"><span class="btn btn-large"><i class="icon-list"></i></span></a>
+		 <a href="#blockView" data-toggle="tab"><span class="btn btn-large btn-primary"><i class="icon-th-large"></i></span></a>
+		</div>
+		<br class="clr"/>
+		<hr class="soft"/>
+		<div class="tab-content">
+			<div class="tab-pane" id="listView">
+				<div class="row">	  
+					<div class="span2">
+						<img src="assets/gambar/produk/kelinci1.jpg" alt=""/>
+					</div>
+					<div class="span4">
+						<h3>Baru | Tersedia</h3>				
+						<hr class="soft"/>
+						<h5>Kelinci Newzelan </h5>
+						<p>
+						Kelinci Newzelan..
+						</p>
+						<a class="btn btn-small pull-right" href="product_details.html"> Detail</a>
+						<br class="clr"/>
+					</div>
+					<div class="span3 alignR">
+					<form class="form-horizontal qtyFrm">
+					<h3> Rp200.rb</h3>
+					<label class="checkbox">
+						<input type="checkbox">  Bandingkan
+					</label><br/>
+					<div class="btn-group">
+					  <a href="product_details.html" class="btn btn-large btn-primary"> Add to <i class=" icon-shopping-cart"></i></a>
+					  <a href="product_details.html" class="btn btn-large"><i class="icon-zoom-in"></i></a>
+					 </div>
+						</form>
+					</div>
+			</div>
+			<hr class="soft"/>
+			<div class="row">	  
+					<div class="span2">
+						<img src="assets/gambar/produk/sapi-po-peranakan-ongole3.jpg" alt=""/>
+					</div>
+					<div class="span4">
+						<h3>Tersedia</h3>				
+						<hr class="soft"/>
+						<h5>Sapi Jawa </h5>
+						<p>
+						Sapi Jawa Jantan..
+						</p>
+						<a class="btn btn-small pull-right" href="product_details.html">Detail</a>
+						<br class="clr"/>
+					</div>
+					<div class="span3 alignR">
+					<form class="form-horizontal qtyFrm">
+						<h3> Rp49.jt</h3>
+						<label class="checkbox">
+						<input type="checkbox">  Bandingkan
+						</label><br/>
+						<div class="btn-group">
+						<a href="product_details.html" class="btn btn-large btn-primary"> Tambah <i class=" icon-shopping-cart"></i></a>
+						<a href="product_details.html" class="btn btn-large"><i class="icon-zoom-in"></i></a>
+						</div>
+					</form>
+					</div>
+			</div>
+			<hr class="soft"/>
+			<div class="row">	  
+					<div class="span2">
+					<img src="assets/gambar/produk/penetas1.jpg" alt=""/>
+					</div>
+					<div class="span4">
+						<h3>Tersedia</h3>				
+						<hr class="soft"/>
+						<h5>Penetas Telur </h5>
+						<p>
+						Penetas Telur Otomatis Isi 50..
+						</p>
+						<a class="btn btn-small pull-right" href="product_details.html">Detail</a>
+						<br class="clr"/>
+					</div>
+					<div class="span3 alignR">
+					<form class="form-horizontal qtyFrm">
+					<h3> Rp1,1.jt</h3>
+					<label class="checkbox">
+						<input type="checkbox">  Bandingkan
+					</label><br/>
+				<div class="btn-group">
+				  <a href="product_details.html" class="btn btn-large btn-primary"> Tambah <i class=" icon-shopping-cart"></i></a>
+				  <a href="product_details.html" class="btn btn-large"><i class="icon-zoom-in"></i></a>
+				 </div>
+						</form>
+					</div>
+			</div>
+			<hr class="soft"/>
+			<div class="row">	  
+					<div class="span2">
+					<img src="assets/gambar/produk/Medisep.jpg" alt=""/>
+					</div>
+					<div class="span4">
+						<h3>Tersedia</h3>				
+						<hr class="soft"/>
+						<h5>MEDISEP </h5>
+						<p>
+						Desinfeksi peralatan kandang...
+						</p>
+						<a class="btn btn-small pull-right" href="product_details.html">Detail</a>
+						<br class="clr"/>
+					</div>
+					<div class="span3 alignR">
+						<form class="form-horizontal qtyFrm">
+						<h3> Rp22.000</h3>
+						<label class="checkbox">
+						<input type="checkbox">  Bandingkan
+						</label><br/>
+						<div class="btn-group">
+						<a href="product_details.html" class="btn btn-large btn-primary"> Tambah <i class=" icon-shopping-cart"></i></a>
+						<a href="product_details.html" class="btn btn-large"><i class="icon-zoom-in"></i></a>
+						</div>
+						</form>
+					</div>
+			</div>
+			
+			<hr class="soft"/>
+			<div class="row">	  
+					<div class="span2">
+					<img src="assets/gambar/produk/Angora-goat.jpg" alt=""/>
+					</div>
+					<div class="span4">
+						<h3>Tersedia</h3>				
+						<hr class="soft"/>
+						<h5>Kambing Angora </h5>
+						<p>
+						Kambing Angora Jantan..
+						</p>
+						<a class="btn btn-small pull-right" href="product_details.html">Detail</a>
+						<br class="clr"/>
+					</div>
+					<div class="span3 alignR">
+						<form class="form-horizontal qtyFrm">
+						<h3> Rp6,2jt</h3>
+						<label class="checkbox">
+						<input type="checkbox">  Bandingkan
+						</label><br/>
+						<div class="btn-group">
+						<a href="product_details.html" class="btn btn-large btn-primary">Tambah <i class=" icon-shopping-cart"></i></a>
+						<a href="product_details.html" class="btn btn-large"><i class="icon-zoom-in"></i></a>
+						</div>
+						</form>
+					</div>
+			</div>
+			<hr class="soft"/>
+				<div class="row">	  
+					<div class="span2">
+					<img src="assets/gambar/produk/comfeed.jpg" alt=""/>
+					</div>
+					<div class="span4">
+						<h3>Tersedia</h3>				
+						<hr class="soft"/>
+						<h5>Comfeed BR II </h5>
+						<p>
+						Broiler Finisher BR II Super Pellet, Pemakaian umur 22 hari - panen Menghasilkan FCR terbaik, Memacu pertambahan berat Menghasilkan karkas yang berimbang Tempatkan pakan di atas palet kayu yang kering, dingin, dan berventilasi baik. Hindari penyimpanan pakan yang bercampur dengan bahan baku pakan lain dan bahan kimia Untuk program pakan 3 fase
+						</p>
+						<a class="btn btn-small pull-right" href="product_details.html">Detail</a>
+						<br class="clr"/>
+					</div>
+					<div class="span3 alignR">
+						<form class="form-horizontal qtyFrm">
+						<h3> Rp222.rb</h3>
+						<label class="checkbox">
+						<input type="checkbox">  Bandingkan
+						</label><br/>
+						<div class="btn-group">
+						<a href="product_details.html" class="btn btn-large btn-primary"> Tambah <i class=" icon-shopping-cart"></i></a>
+						<a href="product_details.html" class="btn btn-large"><i class="icon-zoom-in"></i></a>
+						</div>
+						</form>
+					</div>
+			</div>
+			<hr class="soft"/>
+		</div>
+			<div class="tab-pane active" id="blockView">
+				<ul class="thumbnails">
+					<li class="span3">
+					  <div class="thumbnail">
+						<a href="product_details.html"><img src="assets/gambar/produk/kelinci1.jpg" alt=""/></a>
+						<div class="caption">
+						  <h5>Kelinci Newzelan</h5>
+						  <p> 
+							Kelinci New Zealand. 
+						  </p>
+						  <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Tambah <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">Rp200.rb</a></h4>
+						</div>
+					  </div>
+					</li>
+					<li class="span3">
+					  <div class="thumbnail">
+						<a href="product_details.html"><img src="assets/gambar/produk/sapi-po-peranakan-ongole3.jpg" alt=""/></a>
+						<div class="caption">
+						  <h5>Sapi Jawa</h5>
+						  <p> 
+							Sapi Jawa Jantan. 
+						  </p>
+						  <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Tambah <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">Rp49.jt</a></h4>
+						</div>
+					  </div>
+					</li>
+					<li class="span3">
+					  <div class="thumbnail">
+						<a href="product_details.html"><img src="assets/gambar/produk/penetas1.jpg" alt=""/></a>
+						<div class="caption">
+						  <h5>Mesin  Penetas</h5>
+						  <p> 
+							Mesin Penetas Telu Otomatis 50 butir. 
+						  </p>
+						   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Tambah<i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">Rp1,1.jt</a></h4>
+						</div>
+					  </div>
+					</li>
+					<li class="span3">
+					  <div class="thumbnail">
+						<a href="product_details.html"><img src="assets/gambar/produk/Medisep.jpg" alt=""/></a>
+						<div class="caption">
+						  <h5>MEDISEP</h5>
+						  <p> 
+							Desinfeksi peralatan kandang. 
+						  </p>
+						   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Tambah<i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">Rp22.000</a></h4>
+						</div>
+					  </div>
+					</li>
+					<li class="span3">
+					  <div class="thumbnail">
+						<a href="product_details.html"><img src="assets/gambar/produk/Angora-goat.jpg" alt=""/></a>
+						<div class="caption">
+						  <h5>Kambing Angora</h5>
+						  <p> 
+							Kambing Angora jantan. 
+						  </p>
+						   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Tambah<i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">Rp6,2.jt</a></h4>
+						</div>
+					  </div>
+					</li>
+					<li class="span3">
+					  <div class="thumbnail">
+						<a href="product_details.html"><img src="assets/gambar/produk/comfeed.jpg" alt=""/></a>
+						<div class="caption">
+						  <h5>Comfeed BRII</h5>
+						  <p> 
+							Broiler Finisher BR II Pellet.. 
+						  </p>
+						   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Tambah <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">Rp222.rb</a></h4>
+						</div>
+					  </div>
+					</li>
+				  </ul>
+			<hr class="soft"/>
+			</div>
+		</div>
+				<br class="clr">
+					 </div>
+		</div>
+          </div>
+
+	</div>
+</div>
+</div> </div>
+</div>
+<!-- MainBody End ============================= -->
+<!-- Footer ================================================================== -->
+	<div  id="footerSection">
+	<div class="container">
+		<div class="row">
+			<div class="span3">
+				<h5>ACCOUNT</h5>
+				<a href="login.html">ACCOUNT ANDA</a>
+				<a href="login.html">INFORMASI PENGGUNA</a> 
+				<a href="login.html">ALAMAT</a> 
+				<a href="login.html">DISKON</a>  
+				<a href="login.html">RIWAYAT BELANJA</a>
+			 </div>
+			<div class="span3">
+				<h5>INFORMASI</h5>
+				<a href="contact.html">KONTAK</a>  
+				<a href="register.html">REGISTRSI</a>  
+				<a href="legal_notice.html">KEBIJAKAN PRIVASI</a>  
+				<a href="tac.html">ATURAN PENGGUNAAN</a> 
+				<a href="faq.html">FAQ[TanyaJawab]</a>
+			 </div>
+			<div class="span3">
+				<h5>PEMBELI</h5>
+				<a href="#">CARA BELANJA</a> 
+				<a href="#">PEMBAYARAN</a>  
+				<a href="special_offer.html">JAMINAN AMAN</a>  
+				<a href="#">PROMO</a> 
+				<a href="#">SUPPLIERS</a> 
+			 </div>
+			<div id="socialMedia" class="span3 pull-right">
+			 	<h5>PETA LOKASI</h5>
+			 	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d579.9697636163116!2d110.4447638865538!3d-7.699303070392915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xef3248cc12b18b10!2sPasar%20Jangkang!5e0!3m2!1sen!2sid!4v1612768256268!5m2!1sen!2sid" width="300" height="180" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			 	<h5>SOCIAL MEDIA </h5>
+					<a href="#"><img width="30" height="30" src="assets/gambar/fb.png" title="facebook" alt="facebook"/></a>
+					<a href="#"><img width="30" height="30" src="assets/gambar/twitter.png" title="twitter" alt="twitter"/></a>
+					<a href="#"><img width="30" height="30" src="assets/gambar/youtube.png" title="youtube" alt="youtube"/></a>
+					<a href="#"><img width="30" height="30" src="assets/gambar/ig.png" title="Instagram" alt="Instagram"/></a>
+				<h5>UNDUH APLIKASI KAMI</h5>
+				<a href="#"><img width="80" height="25" src="assets/gambar/playstore.png" title="Playstore" alt="Playstore"/></a>
+				<a href="#"><img width="80" height="25" src="assets/gambar/download.png" title="Appstore" alt="Appstore"/></a>
+			
+			</div> 
+		 </div>
+		<p class="pull-right">&copy; Pasar Sapi ;) mooo</p>
+	</div><!-- Container End -->
+	</div>
+<!-- Placed at the end of the document so the pages load faster ============================================= -->
+	<script src="assets/js/jquery.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="assets/js/google-code-prettify/prettify.js"></script>
+	
+	<script src="assets/js/pasarsapi.js"></script>
+    <script src="assets/js/jquery.lightbox-0.5.js"></script>
+	
+	<!-- Themes switcher section ============================================================================================= -->
+
+</body>
+</html>
